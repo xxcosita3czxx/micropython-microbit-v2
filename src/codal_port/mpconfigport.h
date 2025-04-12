@@ -83,8 +83,12 @@
 #define MICROPY_PY_RANDOM_SEED_INIT_FUNC        (rng_generate_random_word())
 #define MICROPY_PY_RANDOM_EXTRA_FUNCS           (1)
 #define MICROPY_PY_TIME                         (1)
-#define MICROPY_PY_MACHINE_PULSE                (1)
 #define MICROPY_PY_MACHINE                      (1)
+#define MICROPY_PY_MACHINE_PULSE                (1)
+#define MICROPY_PY_MACHINE_PIN_BASE             (1)
+#define MICROPY_MACHINE_MEM_GET_READ_ADDR       mod_machine_mem_get_addr
+#define MICROPY_MACHINE_MEM_GET_WRITE_ADDR      mod_machine_mem_get_addr
+
 #define MICROPY_PY_FRAMEBUF                     (1)
 
 #define MICROPY_HW_ENABLE_RNG                   (1)
